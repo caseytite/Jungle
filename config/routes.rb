@@ -2,13 +2,8 @@ Rails.application.routes.draw do
 
   root to: 'products#index'
 
-  get "about", to: "about#index"
-
-  # namespace :about do
-  #   root to: 'about#index'
-  #   resources :products
-  # end
-
+  # get "about", to: "about#index"
+  resources :about
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
