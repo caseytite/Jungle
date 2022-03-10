@@ -1,0 +1,34 @@
+<h1>About us</h1>
+
+
+
+<div>
+  <h2>Welcome to the Jungle</h2>
+    <p>
+  An online store where all your shopping dreams to true! We have it all from shoes that look like feet, to your very own electric chair!
+    </p>
+</div>
+<hr>
+<article class="product-detail">
+
+    <div class="row">
+
+      <div class="col-sm-4">
+        <%= image_tag @product.image.tiny, class: 'main-img' %>
+      </div>
+
+      <div class="col-sm-8">
+        <dl class="dl-horizontal">
+          <dt>Name</dt>
+          <dd><%= @product.name %></dd>
+          <dt>Description</dt>
+          <dd><%= @product.description %></dd>
+          <dt>Quantity</dt>
+          <dd><%= @product.quantity %></dd>
+          <dt>Price</dt>
+          <dd><%= humanized_money_with_symbol @product.price %></dd>
+        </dl>
+      </div>
+    </div>
+
+  </article>
