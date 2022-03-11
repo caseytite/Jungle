@@ -3,17 +3,17 @@
 
 <%= form_for :user, url: '/users' do |f| %>
 
-  First name:
-  <div> <%= f.text_field :first_name %></div>
-  Last name: 
-  <div><%= f.text_field :last_name %></div>
-  Email: 
-  <div><%= f.text_field :email %></div>
- Password: 
- <div><%= f.password_field :password %></div>
- Password Confirmation: 
- <div><%= f.password_field :password_confirmation %></div>
- <hr>
+  <p><strong>First name:</strong></p>
+  <div> <%= f.text_field :first_name, class: 'log-reg-input' %></div>
+  <strong><p>Last name:</strong></p> 
+  <div><%= f.text_field :last_name, class: 'log-reg-input' %></div>
+  <strong><p>Email: </strong></p>
+  <div><%= f.text_field :email, class: 'log-reg-input' %></div>
+ <strong><p>Password:</strong></p> 
+ <div><%= f.password_field :password, class: 'log-reg-input' %></div>
+ <strong><p>Password Confirmation: </strong></p>
+ <div><%= f.password_field :password_confirmation, class: 'log-reg-input' %></div>
   <div><%= f.submit "Create Account",class: 'btn btn-primary' %></div>
 
+ <hr>
 <% end %>
