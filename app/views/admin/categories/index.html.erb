@@ -1,25 +1,22 @@
-<div>
-<%= link_to 'Create new category', '/admin/categories/new', class: 'btn btn-primary'%>
-</div>
 
 <% @categories.each do |d|%>
 <section class="categories-show">
   <header class="page-header">
     <h1>
-    <table>
-    <td>
-    <tr>
-      <%= d.name %>
-    </tr>
-    <tr>
-      <%= link_to d.name, d, class: 'btn btn-primary' %>
-    </tr>
-    </td>
-    </tabe>
+      <table>
+        <td>
+          <tr>
+            <%= link_to d.name, d %>
+          </tr>
+        </td>
+      </table>
     </h1>
   </header>
 </section>
 <%end%>
 
+<div>
+<%= link_to 'Create new category', '/admin/categories/new', class: 'btn btn-primary'%>
+</div>
 
 
