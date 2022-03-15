@@ -9,8 +9,15 @@ class User < ActiveRecord::Base
   validates :email, presence: true
   validates :password, presence: true, length: { in: 3..30}
   validates :password_confirmation, presence: true, length: { in: 3..30}
+  before_save :downcase_fields
   
   # user.authenticate(params[:password])
+
+  def downcase_fields
+    self.email.downcase!
+ end
+
+
   def self.authenticate_with_credentials(email,password)
 
     @user = User.find_by_email(email.strip.downcase)
