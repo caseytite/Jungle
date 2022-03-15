@@ -10,12 +10,19 @@ class User < ActiveRecord::Base
   validates :password, presence: true, length: { in: 3..30}
   validates :password_confirmation, presence: true, length: { in: 3..30}
   before_save :downcase_fields
+  before_save :capitalize_name_fields
   
-  # user.authenticate(params[:password])
 
   def downcase_fields
     self.email.downcase!
- end
+  end
+
+  def capitalize_name_fields
+    self.first_name.capitalize!
+    self.last_name.capitalize!
+  end
+  
+
 
 
   def self.authenticate_with_credentials(email,password)
