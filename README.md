@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 where you can create accounts, add items and categorys.
 
 ## Additional Steps for Apple M1 Machines
 
@@ -31,3 +31,27 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+
+
+
+
+### Homepage for Jungle
+
+!['homepage'](https://github.com/caseytite/Jungle/blob/master/docs/Screen%20Shot%202022-03-16%20at%207.41.25%20PM.png?raw=true)
+
+### Signup page
+
+!['signup page'](https://github.com/caseytite/Jungle/blob/master/docs/Screen%20Shot%202022-03-16%20at%207.41.46%20PM.png?raw=true)
+
+### A users cart
+
+!['users cart with items'](https://github.com/caseytite/Jungle/blob/master/docs/Screen%20Shot%202022-03-16%20at%207.42.51%20PM.png?raw=true)
+
+### Cart on checkout
+
+!['checking out'](https://github.com/caseytite/Jungle/blob/master/docs/Screen%20Shot%202022-03-16%20at%207.43.25%20PM.png?raw=true)
+
+### After an order has been placed
+
+!['order placed screen'](https://github.com/caseytite/Jungle/blob/master/docs/Screen%20Shot%202022-03-16%20at%207.43.52%20PM.png?raw=true)
